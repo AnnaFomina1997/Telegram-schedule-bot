@@ -1,0 +1,815 @@
+{
+  "project" : {
+    "id" : "assistant_for_misis5-1000147148-rZC",
+    "name" : "assistant_for_misis5-1000147148-rZC",
+    "folder" : "/platform"
+  },
+  "settings" : {
+    "language" : "ru",
+    "spellingCorrection" : false,
+    "classificationAlgorithm" : "sts",
+    "timezone" : "UTC",
+    "extendedSettings" : {
+      "tokenizerEngine" : "mystem",
+      "useShared" : true,
+      "zflPatternsEnabled" : true
+    },
+    "shared" : false,
+    "validation" : {
+      "phraseValidationEnabled" : true,
+      "answerValidationEnabled" : true,
+      "phraseValidationThreshold" : 0.5,
+      "answerValidationThreshold" : 0.8
+    }
+  },
+  "intents" : [ {
+    "path" : "/Аудиофайл",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "Аудиофайл"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "priority" : 0
+  }, {
+    "path" : "/Институт биомедицинской инженерии",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "Институт биомедицинской инженерии"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "priority" : 0
+  }, {
+    "path" : "/Институт развития",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "Институт развития"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "priority" : 0
+  }, {
+    "path" : "/Институт новых материалов",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/Институт экономики и управления",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "Институт экономики и управления"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "priority" : 0
+  }, {
+    "path" : "/Институт базового образования",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "Институт базового образования"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "priority" : 0
+  }, {
+    "path" : "/Институт физики и квантовой инженерии",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "Институт физики и квантовой инженерии"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "priority" : 0
+  }, {
+    "path" : "/Специалитет",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/Магистратура",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/2 курс магистратуры",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "2 курс"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/Новый интент_2",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "priority" : 0
+  }, {
+    "path" : "/4 курс специалитета",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "4 курс специалитета"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "priority" : 0
+  }, {
+    "path" : "/5 курс специалитета",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "5 курс специалитета"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "priority" : 0
+  }, {
+    "path" : "/Институт технологий",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "хочу пожаловаться на вашего сотрудника"
+    }, {
+      "text" : "претензия по качеству"
+    }, {
+      "text" : "не доволен обслуживанием"
+    }, {
+      "text" : "выразить благодарность"
+    }, {
+      "text" : "сказать спасибо"
+    }, {
+      "text" : "оставить отзыв"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/Институт компьютерных наук",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "хочу узнать статус заказа"
+    }, {
+      "text" : "где мой заказ?"
+    }, {
+      "text" : "когда прибудет курьер?"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/Английский язык",
+    "description" : "В этом интенте мы используем системную сущность «номер» (@duckling.number) вместо примеров фраз. Так интент будет срабатывать при вводе пользователем числа, например «42» или «сорок два».",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ "@duckling.number" ],
+    "priority" : 0
+  }, {
+    "path" : "/Горный институт",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "как вы работаете?"
+    }, {
+      "text" : "вы работаете на выходных?"
+    }, {
+      "text" : "вы работаете в воскресенье?"
+    }, {
+      "text" : "во сколько открываетесь?"
+    }, {
+      "text" : "до скольки работаете?"
+    }, {
+      "text" : "как вы работаете?"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/Стиль научный",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "Немецкий язык"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/Java",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "Анализ текста"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/Стиль эпический",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "Стиль эпический"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "priority" : 0
+  }, {
+    "path" : "/Новый интент_1",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "priority" : 0
+  }, {
+    "path" : "/Немецкий язык",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/3",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "Английский язык"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/Python",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "Генерация текста"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/Новый интент",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "priority" : 0
+  }, {
+    "path" : "/ Проанализируй текст",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/C++",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "C++"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "priority" : 0
+  }, {
+    "path" : "/Бакалавриат",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/1 курс бакалавриата",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "1 курс"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/4 курс бакалавриата",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "4 курс"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/2 курс специалитета",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "2 курс специалитета"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "priority" : 0
+  }, {
+    "path" : "/3 курс специалитета",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "3 курс специалитета"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "priority" : 0
+  }, {
+    "path" : "/МПИ-22-1-1",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "Практика"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/Текст",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "Текст"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "priority" : 0
+  }, {
+    "path" : "/3 курс бакалавриата",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/1 курс магистратуры",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/1 курс специалитета",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "1 курс специалитета"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "priority" : 0
+  }, {
+    "path" : "/Зачеты и экзамены",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "Зачеты и экзамены"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "priority" : 0
+  }, {
+    "path" : "/Картинка",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "Картинка"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "priority" : 0
+  }, {
+    "path" : "/Учебная неделя",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "Учебная неделя"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "priority" : 0
+  }, {
+    "path" : "/МИВТ-22-1",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "МПИ-23-1-2"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/МПИ-23-1-2",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "МПИ-23-1-2"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "priority" : 0
+  }, {
+    "path" : "/БИВТ-23-16",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "БИВТ-23-16"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "priority" : 0
+  }, {
+    "path" : "/БИВТ-23-15",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "БИВТ-23-15"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "priority" : 0
+  }, {
+    "path" : "/ГОР-23-2",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "ГОР-23-2"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "priority" : 0
+  }, {
+    "path" : "/ГОР-22-1",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "ГОР-22-1"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "priority" : 0
+  }, {
+    "path" : "/ГОРНЫЙ-2",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "ГОРНЫЙ-2"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "priority" : 0
+  }, {
+    "path" : "/ГОРНЫЙ-3-2",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "ГОРНЫЙ-3-2"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "priority" : 0
+  }, {
+    "path" : "/МПИ-23-1-1",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "МПИ-23-1-1"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "priority" : 0
+  }, {
+    "path" : "/ГОР-23-1",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "ГОР-23-1"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "priority" : 0
+  }, {
+    "path" : "/ГОР-22-2",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "ГОР-22-2"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "priority" : 0
+  }, {
+    "path" : "/ГОРНЫЙ-2-1",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "ГОРНЫЙ-2-1"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "priority" : 0
+  }, {
+    "path" : "/ГОРНЫЙ-2-2",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "ГОРНЫЙ-2-2"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "priority" : 0
+  }, {
+    "path" : "/ГОРНЫЙ-4-1",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "ГОРНЫЙ-4-1"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "priority" : 0
+  }, {
+    "path" : "/ГОРНЫЙ-1",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "ГОРНЫЙ-1"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "priority" : 0
+  }, {
+    "path" : "/ГОРНЫЙ-3-1",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "ГОРНЫЙ-3-1"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "priority" : 0
+  }, {
+    "path" : "/ГОРНЫЙ-4-2",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "ГОРНЫЙ-4-2"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "priority" : 0
+  }, {
+    "path" : "/Назад",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "Назад"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "priority" : 0
+  }, {
+    "path" : "/Завершить",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/наз",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "наз"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "priority" : 0
+  } ],
+  "entities" : [ ],
+  "enabledSystemEntities" : [ "duckling.number", "duckling.time", "duckling.duration", "duckling.phone-number", "duckling.email", "duckling.url" ],
+  "spellerDictionary" : [ ],
+  "systemEntities" : [ {
+    "name" : "mystem.geo",
+    "enabled" : false
+  }, {
+    "name" : "mystem.persn",
+    "enabled" : false
+  }, {
+    "name" : "mystem.obsc",
+    "enabled" : false
+  }, {
+    "name" : "mystem.patrn",
+    "enabled" : false
+  }, {
+    "name" : "mystem.famn",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.romn",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.latn",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.numb",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.intg",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.abbr",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.name",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.surn",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.patr",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.geox",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.orgn",
+    "enabled" : false
+  }, {
+    "name" : "duckling.number",
+    "version" : "v2",
+    "enabled" : true
+  }, {
+    "name" : "duckling.ordinal",
+    "version" : "v2",
+    "enabled" : false
+  }, {
+    "name" : "duckling.amount-of-money",
+    "version" : "v2",
+    "enabled" : false
+  }, {
+    "name" : "duckling.distance",
+    "version" : "v2",
+    "enabled" : false
+  }, {
+    "name" : "duckling.time",
+    "version" : "v2",
+    "enabled" : true
+  }, {
+    "name" : "duckling.date",
+    "version" : "v2",
+    "enabled" : false
+  }, {
+    "name" : "duckling.time-of-day",
+    "version" : "v2",
+    "enabled" : false
+  }, {
+    "name" : "duckling.duration",
+    "version" : "v2",
+    "enabled" : true
+  }, {
+    "name" : "duckling.phone-number",
+    "version" : "v2",
+    "enabled" : true
+  }, {
+    "name" : "duckling.email",
+    "version" : "v2",
+    "enabled" : true
+  }, {
+    "name" : "duckling.url",
+    "version" : "v2",
+    "enabled" : true
+  }, {
+    "name" : "duckling.interval",
+    "version" : "v2",
+    "enabled" : false
+  }, {
+    "name" : "mlps-obscene.obscene",
+    "enabled" : false
+  }, {
+    "name" : "zb.datetime",
+    "enabled" : false
+  }, {
+    "name" : "zb.number",
+    "enabled" : false
+  } ],
+  "faq" : [ ],
+  "skills" : [ ]
+}
